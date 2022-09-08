@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-// void main() {
-//   runApp(const MyApp());
-// }
-
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -14,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData(
             appBarTheme: const AppBarTheme(
-          color: Color.fromARGB(255, 204, 0, 0),
+          color: Color.fromARGB(255, 15, 137, 194),
         )),
         debugShowCheckedModeBanner: false,
         home: Scaffold(
@@ -53,6 +49,21 @@ class MyApp extends StatelessWidget {
               style: TextStyle(fontSize: 24),
             ),
           ),
+          bottomNavigationBar: BottomAppBar(
+            shape: const CircularNotchedRectangle(),
+            color: const Color.fromARGB(255, 15, 137, 194),
+            child: Container(
+              height: 50.0,
+            ),
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {},
+            backgroundColor: const Color.fromARGB(255, 15, 137, 194),
+            tooltip: 'Increment Counter',
+            child: const Icon(Icons.add),
+          ),
+          floatingActionButtonLocation:
+              FloatingActionButtonLocation.centerDocked,
         ));
   }
 }
